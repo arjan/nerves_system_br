@@ -39,7 +39,7 @@ if [[ ! -e "$CACHED_TARBALL_PATH" ]]; then
     if [[ $HASHTAG =~ 20[0-9][0-9]\.[0-1][0-9] ]]; then
         # This is an official release and is hosted on the main
         # download site.
-        DOWNLOAD_URL=https://buildroot.org/downloads/$TARBALL_NAME
+        DOWNLOAD_URL=https://s3.amazonaws.com/nerves/build/$TARBALL_NAME
     else
         # This is an intermediate release and can be downloaded from
         # Buildroot's cgit instance.
